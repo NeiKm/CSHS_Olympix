@@ -48,7 +48,7 @@
 
 Если хочешь присоединиться напиши мне:
 
-* Instagram: @ne1_km
+* Instagram: <a href="https://www.instagram.com/ne1_km">@ne1_km</a>
 
 или создай issue / pull request на GitHub.
 
@@ -152,7 +152,7 @@
 
 참여하고 싶다면 연락 주세요:
 
-* Instagram: @ne1_km
+* Instagram: <a href="https://www.instagram.com/ne1_km">@ne1_km</a>
 
 또는 GitHub에서 issue / pull request를 생성해도 됩니다.
 
