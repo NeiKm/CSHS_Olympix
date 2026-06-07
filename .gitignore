@@ -1,0 +1,14 @@
+# Системные файлы Mac и Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Папка настроек редактора
+.vscode/
+.idea/
+
+# Логи ошибок
+*.log
+npm-debug.log*
+
+node_modules/

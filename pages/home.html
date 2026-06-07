@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSHS OLYMPIX</title>
+    <link rel="stylesheet" href="../assets/css/home.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <select id="lang-select" onchange="changeLanguage()">
+            <option value="ko" selected>🇰🇷 한국어</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="zh">🇨🇳 中文</option>
+            <option value="vi">🇻🇳 Tiếng Việt</option>
+        </select>
+    </div>
+
+    <div class="card welcome-card">
+        <h1 data-i18n="schoolName">천안상업고등학교</h1>
+        <p data-i18n="dateText" class="date-text">오늘: 6월 8일, 월요일</p>
+        
+        <div class="school-stats">
+            <div class="stat-item">
+                <span class="stat-number">792</span>
+                <span class="stat-label" data-i18n="students">학생 수</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">104</span>
+                <span class="stat-label" data-i18n="teachers">교직원 수</span>
+            </div>
+        </div>
+        
+        <button class="btn-register" data-i18n="register">회원가입</button>
+    </div>
+
+    <div class="card">
+        <div class="card-title" data-i18n="scheduleTitle">📚 시간표</div>
+        <div class="schedule-list">
+            <div class="lesson-item">
+                <div class="lesson-info">
+                    <span class="lesson-name">개발중</span>
+                    <span class="lesson-cabinet">개발중</span>
+                </div>
+                <span class="lesson-time">09:00 - 09:50</span>
+            </div>
+            </div>
+    </div>
+
+    <div class="card lunch-card">
+        <div class="card-title" data-i18n="lunchTitle">🍱 점심시간</div>
+        <div class="lunch-time-box">
+            ⏰ 12:00 - 13:00
+        </div>
+        <div class="lunch-menu">
+            개발 중
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title" data-i18n="topTitle">🏆 주간 탑 5 우수학생</div>
+        <div class="leaderboard">
+            <div class="student-item top-1">
+                <div class="student-left">
+                    <span class="rank">1</span>
+                    <span class="student-name">개발 중1</span>
+                </div>
+                <span class="score-badge">234</span>
+            </div>
+            <div class="student-item top-2">
+                <div class="student-left">
+                    <span class="rank">2</span>
+                    <span class="student-name">개발 중2</span>
+                </div>
+                <span class="score-badge">21</span>
+            </div>
+            <div class="student-item top-3">
+                <div class="student-left">
+                    <span class="rank">3</span>
+                    <span class="student-name">개발 중3</span>
+                </div>
+                <span class="score-badge">3</span>
+            </div>
+            <div class="student-item">
+                <div class="student-left">
+                    <span class="rank">4</span>
+                    <span class="student-name">개발 중4</span>
+                </div>
+                <span class="score-badge">1</span>
+            </div>
+            <div class="student-item">
+                <div class="student-left">
+                    <span class="rank">5</span>
+                    <span class="student-name">개발 중5</span>
+                </div>
+                <span class="score-badge">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSHS_OLYMPIX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --bg-main1: #0a0a0a;
+            --bg-main2: #000c30;
+            --bg-main-box1: #010030; 
+            --bg-main-box2: #0a0a0a;
+        }
+        .content {
+            color: white;
+            background: linear-gradient(135deg, var(--bg-main1) 0%, var(--bg-main2) 100%);
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+        }
+
+        .test-box {
+            background: linear-gradient(135deg, var(--bg-main-box1) 0%, var(--bg-main-box2) 100%);
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .title {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .questen {
+            display: flex;
+        }
+
+        .send-btn button {
+            background: var(--bg-main-box);
+            color: white;
+        }
+
+        .questen-write-res input{
+            color: rgb(168, 168, 168);
+            font-size: 20px;
+            background: var(--bg-main-box);
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <div class="test-box">
+            <div class="title">
+                <p>보안문자</p>
+            </div>
+            <div class="questen">
+                <div class="questen-text" id="questen">
+                    <!-- вопрос генерируется через js -->
+                </div>
+                <div class="questen-write-res">
+                    <input type="text" placeholder="..." id="result">
+                </div>
+                <div class="send-btn">
+                    <button id="send-btn">확인</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+
+        let questen_txt = document.getElementById("questen");
+        let result_ = document.getElementById("result");
+        let send_btn = document.getElementById("send-btn");
+
+        function generate_questen() {
+            let num1 = Math.round(Math.random() * 10);
+            let num2 = Math.round(Math.random() * 10);
+            return {
+                "questen": `${num1} + ${num2} =`,
+                "result": num1 + num2
+            }
+        }
+
+        let quest = generate_questen();
+        questen_txt.textContent = quest["questen"];
+
+        send_btn.addEventListener("click", function() {
+            if (result_.value.length > 0 && result_.value == quest["result"]) {
+                alert("환영🎉✨!");
+                window.location = "pages/home.html";
+            }
+            else {
+                alert("한번 더 해봐요");
+                window.location = "index.html";
+            }
+        });
+    </script>
+</body>
+</html>
